@@ -96,6 +96,7 @@ export const removeAllListeners = emitter.removeAllListeners.bind(emitter);
 export const registerApp = wrapRegisterApp(WeChat.registerApp);
 
 export function unregisterApp() {
+  isAppRegistered = false;
   WeChat.unregisterApp();
 }
 
