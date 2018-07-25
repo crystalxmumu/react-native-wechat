@@ -95,6 +95,10 @@ export const removeAllListeners = emitter.removeAllListeners.bind(emitter);
  */
 export const registerApp = wrapRegisterApp(WeChat.registerApp);
 
+export function unregisterApp() {
+  WeChat.unregisterApp();
+}
+
 /**
  * @method registerAppWithDescription
  * @param {String} appid - the app id
